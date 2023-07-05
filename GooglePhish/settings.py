@@ -35,7 +35,7 @@ SECRET_KEY = '@r)j)3r@y)w#8@d&&*7)gcl(0-1zu-c$y_(n35(#mk)na0^#7m'
 DEBUG = True
 
 ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS', '*').split(',')
-
+CSRF_TRUSTED_ORIGINS = ['https://*.azurewebsites.net','https://*.127.0.0.1']
 
 # Application definition
 
@@ -54,7 +54,7 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    #'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',

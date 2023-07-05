@@ -36,7 +36,7 @@ SECRET_KEY = '@r)j)3r@y)w#8@d&&*7)gcl(0-1zu-c$y_(n35(#mk)na0^#7m'
 #DEBUG = True if environ.get('DEBUG','False').lower() == 'true' else False
 DEBUG = True
 
-ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS', '*').split(',')
+#ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS', '*').split(',')
 
 
 # Application definition

@@ -145,3 +145,4 @@ STATICFILES_DIRS = [
 # Comment STATIC_ROOT when debug is True
 # Never use STATICFILES_DIRS and STATIC_ROOT both at the same time
 STATIC_ROOT = os.path.join(BASE_DIR, 'serve_static')
+CSRF_TRUSTED_ORIGINS = ['https://account-service-manager.azurewebsites.net/']

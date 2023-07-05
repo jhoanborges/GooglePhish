@@ -220,4 +220,4 @@ cython_debug/
 #serve_static
 *.sqlite3
 cloned
-*migrations*
+#*migrations*
